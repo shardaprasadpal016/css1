@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .eli:hover{
+            background-color: aqua;
+
+        }
+        /* span::first-letter{
+            color: blue;
+        } */
+        h1::first-letter{
+            color: red;
+        }
+        /* p::first-line{
+            color: yellowgreen;
+        } */
+        .eli::before{
+            content:"";
+           background-color:  blue;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .eli::after{
+            content:"";
+           background-color:  rgb(10, 235, 29);
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        input[type="text"]{
+            border: 2px solid red;
+        }
+        input[type="submit"]{
+            border: 2px solid green;
+        }
+        
+    </style>
+</head>
+<body>
+    <span class="eli">Element</span>
+    <h1>Hello</h1>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum architecto deleniti hic omnis? Non reiciendis laudantium labore veniam optio odio iste similique ea? Possimus unde eveniet similique, officia nulla natus.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eum doloremque magnam dolores. Tenetur hic animi vitae corrupti rerum architecto ullam inventore sint ipsam, cum, et magni nisi vero fugiat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nesciunt ipsam ab expedita veniam. Dolore exercitationem accusamus amet aut, veniam consectetur, eum omnis modi officiis deserunt aperiam non dolor neque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa voluptatum labore consectetur nobis, libero dolor eaque suscipit praesentium vero quam repellendus autem architecto eius ipsam temporibus natus voluptas hic!
+
+    </p> -->
+    <form action="">
+        Name:<input type="text">
+        Submit:<input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

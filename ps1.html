@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps1</title>
+    <style>
+        .el1:hover
+        {
+            background-color: blueviolet;
+        }
+        .el1::before
+        {
+            /* content:" hi sharda prasad"; */
+            content:" ";
+            display: inline-block;
+            background-color: red;
+            border-radius: 100%;
+            margin-right: 15px;
+            width: 10px;
+            height: 10px;
+        }
+        .el1::after{
+            content:" ";
+            display: inline-block;
+            background-color: green;
+            border-radius: 100%;
+            margin-left: 15px;
+            width: 10px;
+            height: 10px;
+
+        }
+        /* input[type="text"]
+        {
+            border: 4px solid rgb(14, 223, 136);
+        } */
+        input[type="number"]
+        {
+            border: 4px solid rgb(14, 223, 136);
+            outline: none;
+        }
+        /* input[type="text"]:invalid
+        {
+            border: 4px solid red;
+        } */
+        input[type="number"]:out-of-range
+        {
+            color: red;
+            border: 4px solid pink;
+        }
+        /* h1::first-letter
+        {
+color: aqua;
+        }
+        p::first-line
+        {
+            color: greenyellow;
+        } */
+        
+    </style>
+</head>
+<body>
+    <span class="el1">Element 1</span>
+<!-- <h1>Hello</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum adipisci sit magnam perspiciatis exercitationem eveniet autem. Aperiam, sint. Commodi animi dolorem voluptas libero, laboriosam soluta perspiciatis aut eum sequi minus!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id rerum explicabo, facilis consectetur iure repellendus. Earum ipsa repudiandae quo, voluptatum aliquam officiis necessitatibus, culpa, magni eos perferendis officia voluptatibus.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quas qui illum magni magnam itaque ratione enim eius distinctio voluptates. Odio quas doloremque molestiae voluptatum cupiditate est nam asperiores dolore.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit explicabo perspiciatis quae, enim, dolore, dolor nulla ab quia qui assumenda veniam libero labore. Doloremque odio ut dicta rerum iste architecto.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum consequatur harum quasi est enim sit reiciendis neque, magni quos ea dignissimos voluptate quaerat iure ullam? Dolorem quibusdam impedit vitae porro.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iusto. Ullam, possimus suscipit. Magni temporibus omnis harum quia consequuntur, eos eius! At eum laborum quisquam quasi inventore aspernatur, consequatur error.
+
+</p> -->
+<form action="">
+<!-- Name:<input type="text" required minlength="2" maxlength="5"> -->
+<!-- Name:<input type="text" pattern="[a-z A-Z . ]{0,4}" title="sirf letter and small dot lagao"> -->
+Name:<input type="number" min="2" max="5">
+<input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
